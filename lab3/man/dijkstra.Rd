@@ -2,22 +2,25 @@
 % Please edit documentation in R/dijkstra.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{The algorithm takes a graph and an initial node and calculates the shortest path from the initial node to every other node in the graph.
-https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm}
+\title{The algorithm takes a graph and an initial node and calculates the shortest
+path from the initial node to every other node in the graph.}
 \usage{
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{graph}{A dataframe with with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w).}
+\item{graph}{A dataframe with with three variables (v1, v2 and w) that
+contains the edges of the graph (from v1 to v2) with the weight of the edge
+(w).}
 
 \item{init_node}{A number.}
 }
 \value{
-The shortest path to every other node in \code{graph} from the \code{init_node} as a vector.
+The shortest path to every other node in \code{graph} from the
+  \code{init_node} as a vector.
 }
 \description{
-The algorithm takes a graph and an initial node and calculates the shortest path from the initial node to every other node in the graph.
-https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+The algorithm takes a graph and an initial node and calculates the shortest
+path from the initial node to every other node in the graph.
 }
 \examples{
 wiki_graph <-
@@ -26,4 +29,7 @@ data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
            w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
 dijkstra(wiki_graph, 1)
 dijkstra(wiki_graph, 3)
+}
+\seealso{
+
 }

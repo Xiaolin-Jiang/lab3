@@ -1,5 +1,4 @@
 #' find the greatest common divisor of two numbers.
-#' https://en.wikipedia.org/wiki/Euclidean_algorithm
 #'
 #' @param a A number.
 #' @param b A number.
@@ -7,6 +6,7 @@
 #' @examples
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
+#' @seealso \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 
 euclidean <- function(a,b){
   if(a<b){
