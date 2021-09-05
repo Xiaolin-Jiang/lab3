@@ -1,4 +1,5 @@
 #' find the greatest common divisor of two numbers.
+#' https://en.wikipedia.org/wiki/Euclidean_algorithm
 #'
 #' @param a A number.
 #' @param b A number.
