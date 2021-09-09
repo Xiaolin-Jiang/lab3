@@ -15,11 +15,11 @@
 #'            w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
 #' dijkstra(wiki_graph, 1)
 #' dijkstra(wiki_graph, 3)
-#' @seealso \url{https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm}
-
+#' @seealso \url{https://en.wikipedia.org/wiki/Dijkstra}
+#' @export
 
 dijkstra <- function(graph, init_node){
-  if((is.data.frame(graph)==FALSE)||(is.numeric(init_node)==FALSE)){
+  if((is.data.frame(graph)==FALSE)||(is.numeric(init_node)==FALSE)||(init_node>max(graph[,1]))||names(graph)!=c("v1", "v2", "w")){
     stop()
   }
 

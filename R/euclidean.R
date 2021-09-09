@@ -7,8 +7,14 @@
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
 #' @seealso \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+#' @export
 
 euclidean <- function(a,b){
+  if((is.numeric(a)==FALSE)||(is.numeric(b)==FALSE)){
+    stop()
+  }
+  a = abs(a)
+  b = abs(b)
   if(a<b){
     t = a
     a = b
