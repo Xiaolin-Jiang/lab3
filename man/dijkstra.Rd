@@ -31,5 +31,5 @@ dijkstra(wiki_graph, 1)
 dijkstra(wiki_graph, 3)
 }
 \seealso{
-
+\url{https://en.wikipedia.org/wiki/Dijkstra}
 }
