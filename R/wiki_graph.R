@@ -6,3 +6,5 @@
 #'     means there is edge linking V1 and V2 whose length is 7,as well as last
 #'     column (6,5,9) means there is edge linking V5 and V6 whose length is 9.
 #'
+NULL
+#> NULL

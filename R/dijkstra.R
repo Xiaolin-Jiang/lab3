@@ -19,9 +19,23 @@
 #' @export
 
 dijkstra <- function(graph, init_node){
-  if((is.data.frame(graph)==FALSE)||(is.numeric(init_node)==FALSE)||(init_node>max(graph[,1]))||names(graph)!=c("v1", "v2", "w")){
+  if((is.data.frame(graph)==FALSE)||(is.numeric(init_node)==FALSE)){
     stop()
   }
+
+
+  if(length(graph)<3){
+    stop()
+  }
+
+
+  if(sum(c("v1","v2","w")==names(graph))!=3){
+    stop()
+  }
+  if(init_node>max(graph[,1])){
+    stop()
+  }
+
 
   vertex_number = max(graph[,1])
   Length_matrix = matrix(10*max(graph[,3]), nrow = vertex_number, ncol = vertex_number )
